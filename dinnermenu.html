@@ -2,25 +2,113 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Menu</title>
-</head>
-<body>
+    <html lang="en">
+<title>Dixie Castle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", Bradley Hand;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+  
     
-  <img src="\img\front dinner menu.jpg">
-  <img src="\img\back dinner menu.jpg">
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Dixie Castle</a>
+        <a href="locations.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Locations</a>
+        <a href="aboutowner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Meet the Owner</a>
+        <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="lunchmenu.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Lunch Menu</a>
+        <a href="dinnermenu.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Dinner Menu</a>
+        
+        
+      </div>
+    </div>
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+       <h4 class="w3-bar-item"><b>Dixie Castle</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="dixiecastlehours.html">Hours</a>
+      <h4 class="w3-bar-item"><b>Dixie Castle II</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="dixiecastleIIhours.html">Hours</a>
+        <h4 class="w3-bar-item"><b>Dixie Castle Airways</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="dixiecastleairwayshours.html">Hours</a>
+      
+    </nav>
     
     
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     
     
+    <div class="w3-main" style="margin-left:250px">
     
     
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Dinner Menu</h1>
+          <img src="./img/front dinner menu.jpg" alt="Front of Dinner Menu" width="450px">
+          <img src="./img/back dinner menu.jpg" alt="Back of Dinner Menu" width="450px" >
+          <br>
+          </div>
+          <div>
+          <h3>For dinner, Dixie Castle is best known for their ribeyes. For $16.95 you can get a 10oz ribeye with toast and your choice of fries or a baked potato and a salad, which is a very good deal. All of the other options on the menu also come with toast and your choice of a baked potato or fries.</h3>
+        </div>
+        
+    
+      
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-black" href="index.html">Home Page</a>
+          <a class="w3-button w3-hover-black" href="locations.html">Locations</a>
+          <a class="w3-button w3-hover-black" href="aboutowner.html">Meet the Owner</a>
+          <a class="w3-button w3-hover-black" href="Contact.html">Contact</a>
+          <a class="w3-button w3-hover-black" href="lunchmenu.html">Lunch Menu</a>
+          <a class="w3-button w3-hover-black" href="dinnermenu.html">Dinner Menu</a>
+        </div>
+      </div>
+    
+     
+    
+   
+    </div>
+    
+    <script>
+   
+    var mySidebar = document.getElementById("mySidebar");
     
     
+    var overlayBg = document.getElementById("myOverlay");
     
-    <h6><a href="index.html">Return to Home Page</a></h6>
     
-
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
 </body>
+</html>
 </html>
